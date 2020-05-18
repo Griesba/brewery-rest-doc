@@ -14,10 +14,11 @@ import java.util.UUID;
  * Created by jt on 2019-04-21.
  */
 
-@RequestMapping("api/v1/customer")
+@RequestMapping(CustomerController.BASE_URL)
 @RestController
 public class CustomerController {
 
+    public static final String BASE_URL = "/api/v1/customer";
     private CustomerService customerService;
 
     public CustomerController(CustomerService customerService) {
